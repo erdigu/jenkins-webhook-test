@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Webhook Triggered') {
       steps {
-        echo "🎉 Jenkins triggered successfully from GitHub webhook!"
+        echo "🎉DSP Jenkins triggered successfully from GitHub webhook!"
       }
     }
   }
