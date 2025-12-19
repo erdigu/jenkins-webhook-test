@@ -1,10 +1,11 @@
 pipeline {
-  agent any
-  stages {
-    stage('Webhook Triggered') {
-      steps {
-        echo "🎉DSP Jenkins triggered successfully from GitHub webhook!"
-      }
+    agent any
+
+    stages {
+        stage('Test Trigger') {
+            steps {
+                echo 'Build triggered by GitHub webhook!'
+            }
+        }
     }
-  }
 }
